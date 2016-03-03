@@ -109,11 +109,11 @@ public class InfoComponent extends BukkitComponent {
     }
 
     public class Commands {
-        @Command(aliases = {"whereami", "getpos", "pos", "where"},
+        @Command(aliases = "pos"},
                 usage = "[player]", desc = "Show your current location",
                 flags = "", min = 0, max = 1)
-        @CommandPermissions({"commandbook.whereami"})
-        public void whereAmI(CommandContext args, CommandSender sender) throws CommandException {
+        @CommandPermissions({"commandbook.pos"})
+        public void pos(CommandContext args, CommandSender sender) throws CommandException {
 
             Player player;
 
